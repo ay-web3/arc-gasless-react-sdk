@@ -15,7 +15,8 @@ export const ArcConnectButton: React.FC<ArcConnectButtonProps> = ({
   onSuccess,
   onError,
 }) => {
-  const { isReady, w3sSdk, isConnected, userAddress, setUserAddress } = useArcWalletContext();
+  const { isReady, w3sSdk, userAddress, setUserAddress } = useArcWalletContext();
+  const isConnected = !!userAddress;
   const [isLoading, setIsLoading] = useState(false);
 
   const handleConnect = async () => {

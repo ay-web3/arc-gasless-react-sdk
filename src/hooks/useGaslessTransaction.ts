@@ -9,7 +9,8 @@ export interface GaslessTransactionOptions {
 }
 
 export const useGaslessTransaction = () => {
-  const { isConnected, userAddress } = useArcWalletContext();
+  const { userAddress } = useArcWalletContext();
+  const isConnected = !!userAddress;
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState<Error | null>(null);
 
