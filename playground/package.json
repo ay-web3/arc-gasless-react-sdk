@@ -9,15 +9,16 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "arc-gasless-react": "file:..",
     "react": "^18.3.1",
-    "react-dom": "^18.3.1",
-    "arc-gasless-react": "file:.."
+    "react-dom": "^18.3.1"
   },
   "devDependencies": {
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
     "@vitejs/plugin-react": "^4.3.1",
     "typescript": "^5.2.2",
-    "vite": "^5.3.4"
+    "vite": "^5.3.4",
+    "vite-plugin-node-polyfills": "^0.26.0"
   }
 }
