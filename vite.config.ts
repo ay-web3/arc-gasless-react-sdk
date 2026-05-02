@@ -15,11 +15,13 @@ export default defineConfig({
       fileName: (format) => `arc-gasless-react.${format}.js`,
     },
     rollupOptions: {
-      external: ['react', 'react-dom'],
+      external: ['react', 'react-dom', '@circle-fin/w3s-pw-web-sdk', 'viem'],
       output: {
         globals: {
           react: 'React',
           'react-dom': 'ReactDOM',
+          '@circle-fin/w3s-pw-web-sdk': 'CircleW3S',
+          'viem': 'Viem'
         },
       },
     },
